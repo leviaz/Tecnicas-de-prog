@@ -32,20 +32,24 @@ class Circulo extends Figura{
 		this.r=r;
 	}
 
+        @Override
 	public String toString(){
 		return this.tipo;
 	}
 	
+        @Override
 	public void desenhar(){
 		System.out.println(this.toString());
 	}
 	
+        @Override
 	public void calcularArea(){
 		double area;
 		area=3.14*(this.getR())*(this.getR());
 		System.out.println("area da figura:"+area);	
 		
 	} 
+        @Override
 	public void mover(float dx,float dy){
 		this.setX(this.getX()+dx);
 		this.setY(this.getX()+dy);
